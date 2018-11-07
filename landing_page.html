@@ -6,38 +6,47 @@
     <title>Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="landing_page.css" />
-    <!-- <script src="main.js"></script> -->
+    
+
 </head>
 <body>
     
     <header id="header">
-        <h1>Diablo Immortal Fan Page</h1>
-
+        
         <!-- navbar is always on top -->
-        <nav id="nav-bar">
+        <nav id="nav-bar"><img src="https://cdn.macrumors.com/article-new/2018/11/diabloimmortal-800x397.jpg?retina" alt="no pic available" id="header-img">
+            <h1>Fan Page</h1>
             <!-- navigate to the position on site when clicked on nav-link -->
-            <div class="nav-link"></div>
-            <div class="nav-link"></div>
-            <div class="nav-link"></div>
-        </nav>
-
-        <img src="" alt="no pic available" id="header-img">            
-
+            <div class="nav-link">Game</div>
+            <div class="nav-link">Video</div>
+            <div class="nav-link">Sign Up!</div>
+        </nav>    
     </header>
 
-<div id="main-container">
+<div class="boxes">
+    <div class="promo-box">
+        <p>Info about the game</p>
+    </div>    
+    <div class="promo-box">
+        <p>Info about the game</p>
+    </div>    
+    <div class="promo-box">
+        <p>Info about the game</p>
+    </div>    
+</div>
 
-<video src="" id="video">product video</video>
+<div id="main-container">           
 
-<form action="" id="form">
+    <video src="" id="video">product video</video>
 
-    <!-- use HTML5 validation to check if valid email address is entered -->
-    <input type="text" id="email" placeholder="email-address">
+    <form action="" id="form">
+    
+        <input type="text" id="email" placeholder="email-address" required>
 
     <!-- when clicked email submits to mock page https://www.freecodecamp.com/email-submit -->
-    <button id="submit">SUBMIT</button>
+        <button id="submit">SUBMIT</button>
 
-</form>
+    </form>
 <!-- 
 use flexbox once
 
