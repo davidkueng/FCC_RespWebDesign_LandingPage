@@ -11,55 +11,57 @@
 </head>
 <body>
     
-    <header id="header">        
+        <header id="header">        
         
-        <!-- make the nav links collapse to a burger menu -->
-
-        <nav id="nav-bar"><img src="https://cdn.macrumors.com/article-new/2018/11/diabloimmortal-800x397.jpg?retina" alt="no pic available" id="header-img">
-            <h1>Fan Page</h1>
-            <!-- navigate to the position on site when clicked on nav-link -->   
-            <div id="nav-links">
-                <div class="nav-link">Game</div>
-                <div class="nav-link">Video</div>
-                <div class="nav-link">Sign Up!</div>         
-            </div>         
-        </nav>    
-    </header>
-
-
-
-<div id="main-container">      
-    
-    <video src="" id="video">product video</video>
-
-    <div id="boxes">
-        <div class="promo-box">
-            <p>Info about the game</p>
-        </div>    
-        <div class="promo-box">
-            <p>Info about the game</p>
-        </div>    
-        <div class="promo-box">
-            <p>Info about the game</p>
-        </div>    
-    </div>
-
-   
-
-    <form action="" id="form">
-    
-        <input type="text" id="email" placeholder="email-address" required>
-
-    <!-- when clicked email submits to mock page https://www.freecodecamp.com/email-submit -->
-        <button id="submit">SUBMIT</button>
-
-    </form>
-<!-- 
-use flexbox once
-
-use one media query -->
-
-</div>
+                <!-- make the nav links collapse to a burger menu -->
+                <nav id="nav-bar"><img src="https://cdn.macrumors.com/article-new/2018/11/diabloimmortal-800x397.jpg?retina" alt="no pic available" id="header-img">
+                    <h1> <a href="#">Fan Page</a></h1>            
+                    <div id="nav-links">
+                        <a class="nav-link" href="#boxes">Game</a>
+                        <a class="nav-link" href="#video">Video</a>
+                        <a class="nav-link" href="#form">Sign Up!</a>        
+                    </div>         
+                </nav>    
+            </header>
+        
+        
+        
+        <div id="main-container">      
+        
+            <h2>Diablo is back with a new awesome experience for the whole familiy!</h2> 
+        
+                <iframe 
+                    id="video"
+                    src="https://clips.twitch.tv/embed?clip=AliveRenownedHamsterAliens" 
+                    frameborder="0"            
+                    scrolling="no"
+                    allowfullscreen="true">       
+                </iframe>     
+        
+            <div id="boxes">
+                <div class="promo-box">
+                    <p>Experience Diablo 3 <br> in a <br> <strong>downscaled <br> low res adventure!</strong><br> 
+                        on your phone</p>
+                </div>    
+                <div class="promo-box">
+                    <p>Even your 6 year old sister <br> can pay to win <br> playing this <br> <strong>clone of a <br> chinese phone game!</strong></p>
+                </div>    
+                <div class="promo-box">
+                    <p>Finally <br> you can play Diablo <br>hunched down <br> staring at your <br> <strong>small phone screen!</strong></p>
+                </div>    
+            </div>
+        
+           
+            <p>Enter your email address and click submit to receive info about this awesome game</p>
+            <form  id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            
+              <input type="email" id="email" placeholder="email-address" name="email" required>
+                
+              <input id="submit" type="submit">
+        
+            </form>
+        
+        </div>
 
 </body>
 </html>
